@@ -1,0 +1,74 @@
+Es necesario tener instalado Node.js
+
+=== 1: Verificar si TypeScript ya esta instalado
+
+tsc -v 
+
+=== 2: Instala TypeScript globalmente
+
+npm install -g typescript
+
+=== Crear un proyecto TypeScript
+
+1. Crea una carpeta para tu proyecto:
+
+mkdir mi-proyecto-ts
+cd mi-proyecto-ts
+
+2. Inicializa un proyecto Node:
+
+npm init -y
+
+3. Instala TypeScript localmente (buena práctica para proyectos):
+
+npm install --save-dev typescript
+
+4. Crea un archivo de configuración de TypeScript:
+
+npx tsc --init
+
+- Esto generará un archivo llamado tsconfig.json.
+
+
+=== tsconfig.json (subtema del roadmap)
+
+Este archivo configura cómo se comporta el compilador de TypeScript.
+
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
+
+Explicación rápida:
+
+'target:' Versión de JavaScript que genera (ES5, ES6, etc.).
+
+'module:' Sistema de módulos (CommonJS para Node.js, ESNext para frontend moderno).
+
+'outDir:' Carpeta donde se pondrá el código JavaScript compilado.
+
+'rootDir:' Carpeta donde están los archivos .ts.
+
+'strict:' Activa todas las comprobaciones estrictas de tipo.
+
+'esModuleInterop:' Permite importar paquetes JS como si fueran módulos TS.
+
+
+Opciones del compilador (Compiler Options)
+Puedes ver todas las opciones aquí: https://www.typescriptlang.org/tsconfig
+
+'strict'	Activa todos los chequeos estrictos
+'noImplicitAny'	Error si no se declara tipo y TypeScript asume any
+'alwaysStrict'	Usa el modo estricto de JavaScript automáticamente
+'sourceMap'	Genera archivos .map para depurar con el navegador
+'declaration'	Genera archivos .d.ts (definiciones de tipos)
+
+

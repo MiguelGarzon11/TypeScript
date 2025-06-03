@@ -1,0 +1,27 @@
+| Aspecto                  | JavaScript                       | TypeScript                                      |
+|--------------------------|----------------------------------|-------------------------------------------------|
+| Lenguaje                 | Interpretado                     | Lenguaje con tipado y compilado                 |
+| Tipado                   | Dinámico                         | Estático (puedes definir los tipos)             |
+| Detección de errores     | En tiempo de ejecución           | En tiempo de desarrollo                         |
+| Curva de aprendizaje     | Baja                             | Un poco más alta                                |
+| Flexibilidad             | Muy flexible                     | Más estricto (por seguridad)                    |
+| Herramientas de desarrollo | Buenas                         | Excelente (VSCode, IntelliSense)                |
+
+
+=== JavaScript
+
+function sumar(a, b) {
+    return a + b; // si pasas strings, concatena; si pasas números, suma
+}
+
+=== TypeScript
+
+function sumar(a: number, b: number): number { 
+    return a + b; // Si pasas algo que no es número, TypeScript da error
+}
+
+¿Cuándo elegir uno u otro?
+
+Usa JavaScript si el proyecto es pequeño, rápido, o si trabajas en algo ya existente en JS.
+
+Usa TypeScript si quieres más control, seguridad y escalabilidad en proyectos medianos o grandes. 
