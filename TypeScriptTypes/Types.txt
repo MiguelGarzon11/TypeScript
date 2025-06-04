@@ -1,0 +1,37 @@
+Primitive Types: Son los tipos de datos más básicos de TypeScript.
+
+| Tipo        | Descripción                                     | Ejemplo                                    |
+|-------------|-------------------------------------------------|--------------------------------------------|
+| boolean     | Verdadero o falso                               | let activo: boolean = true;                |
+| number      | Números (enteros o decimales)                   | let edad: number = 25;                     |
+| string      | Texto/cadena de caracteres                      | let nombre: string = "Miguel";             |
+| void        | No retorna ningún valor                         | function saludar(): void { console.log("Hola"); } |
+| undefined   | Valor no definido                               | let x: undefined = undefined;              |
+| null        | Ausencia intencional de valor                   | let y: null = null;                        |
+
+
+Object Types: Son tipos más complejos que pueden contener múltiples valores y estructuras.
+
+| Tipo        | Descripción                                     | Ejemplo                                    |
+|-------------|-------------------------------------------------|--------------------------------------------|
+| Interface   | Estructura de un objeto                         | interface Persona { nombre: string; edad: number; } |
+| Class       | Definición de objetos con métodos y atributos   | class Persona { constructor(public nombre: string) {} } |
+| Enum        | Conjunto de constantes                          | enum Color { Rojo, Verde, Azul }           |
+| Array       | Lista de elementos del mismo tipo               | let numeros: number[] = [1, 2, 3];         |
+| Tuple       | Lista de elementos con tipos específicos        | let tupla: [string, number] = ["edad", 17];|
+| Object      | Cualquier objeto genérico                       | let persona: object = { nombre: "Ana" };   |
+
+
+Top Types: Estos tipos pueden representar cualquier valor posible.
+
+| Tipo        | Descripción                                     | Ejemplo                                    |
+|-------------|-------------------------------------------------|--------------------------------------------|
+| unknown     | Valor de tipo desconocido, requiere verificación| let valor: unknown = "texto";              |
+| any         | Permite cualquier tipo, sin verificación        | let datos: any = 123;                      |
+
+
+Bottom Type: Se usa en funciones que nunca terminan (ej. errores) o que nunca retornan.
+
+| Tipo        | Descripción                                     | Ejemplo                                    |
+|-------------|-------------------------------------------------|--------------------------------------------|
+| never       | Nunca retorna un valor                          | function error(): never { throw new Error("Error"); } |
