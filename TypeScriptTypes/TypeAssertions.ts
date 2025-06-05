@@ -25,7 +25,7 @@ value = 42;
 // as const 
 // Convierte el valor en readonly y literal.
 
-const config = {
+const config1 = {
     theme: "dark",
     fontSize: 12,
 } as const; // Hace que TypeScript no generalice tipos si no que los tome de manera literal a como se definen.
