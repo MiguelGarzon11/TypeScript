@@ -49,11 +49,37 @@ console.log(obtenerValor(usuario1, "activo"));
 
 
 
+function getValue<T, K extends keyof T>(objeto: T, clave: K): T[K] {
+    return objeto[clave];
+}
+
+// Esto es una función generica.
+
+// Significa que T y K son tipos genericos, que se adaptan a lo que le pases.
+// T es el tipo del objeto completo (como persona).
+// K es el tipo de la clave del objeto,que debe ser una de las claves del tipo T (por eso extends keyof T).
+
+// Si pasas un objeto tipo Persona, entonces:
+// T = Persona 
+// K = 'nombre' | 'edad' | 'activo' ) porque eso es keyof Persona 
+
+
 // Ejercicio:
 
-type Producto = { 
+type Persona2 = { 
     nombre: string;
-    precio: number;
-    enStock: boolean;
+    edad: number;
 };
+
+const user: Persona2 = {
+    nombre: "Miguel",
+    edad: 17,
+};
+
+function imprimirPropiedad<T, K extends keyof T>(objeto: T, clave: K): void {
+    console.log(objeto[clave]);
+}
+
+imprimirPropiedad(user, "nombre");
+imprimirPropiedad(user, "edad");
 
