@@ -14,3 +14,4 @@ function print(valor: string | number) {
         console.log(valor.toFixed(2));
     }
 }
+function
