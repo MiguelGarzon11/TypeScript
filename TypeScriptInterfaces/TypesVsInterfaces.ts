@@ -17,4 +17,22 @@ interface Usuario2 { nombre: string };
 // | Recomendado para objetos/clases | ❌ Mejor evitar                  | ✅ Más recomendado          |
 
 
+// Ejercicio:
+
+type Animal = { nombre: string, esDomestico: boolean };
+interface Animal2 { nombre: string, esDomestico: boolean };
+
+
+// Usa interface si:
+
+// Vas a trabajar con clases
+// Quieres aprovechar la fusión de declaraciones.
+
+
+// Usa type si:
+
+// Necesitas hacer una unión o combinación de tipos.
+// Quieres tipos complejos como funciones, tuplas o combinaciones
+
+
 

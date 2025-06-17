@@ -15,3 +15,20 @@ const alumno: Estudiante = {
     edad: 18,
 };
 
+
+// Ejercicio:
+
+interface Usuario1 {
+    nombre: string;
+    email: string;
+}
+
+interface Administrador extends Usuario1 {
+    nivelAcceso: string;
+}
+
+const cliente: Administrador = {
+    nombre: "Pedro",
+    email: "pedro32@gmail.com",
+    nivelAcceso: "Total",
+}

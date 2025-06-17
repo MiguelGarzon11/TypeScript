@@ -10,3 +10,17 @@ const miguel: Persona = {
     edad: 18,
 };
 
+// Ejercicio: 
+// Crea una interfaz llamada Libro con los siguientes campos:
+
+interface Libro {
+    titulo: string;
+    autor: string;
+    paginas: number;
+}
+
+const Donquijote: Libro = {
+    titulo: "Donquijote",
+    autor: "Miguel de Cervantes",
+    paginas: 1400,
+}

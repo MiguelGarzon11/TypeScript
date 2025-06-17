@@ -17,3 +17,21 @@ contador();  // 2
 console.log(contador.valor); // 2
 
 
+// Ejercicio:
+
+interface Contador2 {
+    (): number;
+    valor: number;
+}
+
+function crearContador2(): Contador {
+    const c = () => ++c.valor;
+    c.valor = 0;
+    return c;
+}
+
+const contador2 = crearContador2();
+contador2();
+contador2();
+console.log(contador.valor);
+

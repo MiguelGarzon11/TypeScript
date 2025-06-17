@@ -15,3 +15,21 @@ const item: Producto = {
     precio: 2000000,
 };
 
+
+// Ejercicio: 
+
+
+interface Vehiculo {
+    marca: string;
+}
+
+interface Vehiculo {
+    modelo: number;
+}
+
+const carro: Vehiculo = {
+    marca: "mercedez",
+    modelo: 2026,
+}
+
+
