@@ -20,7 +20,7 @@ class Animal {
         this.nombre = nombre;
         if (edad) this.edad = edad;
     }
-}
+}2
 
 new Animal("Oliver"); // Solo nombre.
-new Animal("Margarita", 10);  // Nombre y edad.
+new Animal("Margarita", 10);  // Nombre y edad. a

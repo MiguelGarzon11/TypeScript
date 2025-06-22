@@ -3,7 +3,7 @@
 
 // Ejemplo:
 
-// type Persona = { nombre: string, edad: number };
+type Persona = { nombre: string, edad: number };
 let usuario = { nombre:"Camila", edad: 18, ciudad: "Bogotá" };
 let animal = { nombre: "Firulais", edad: 25};
 
